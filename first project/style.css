@@ -1,0 +1,307 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Edu+NSW+ACT+Foundation&family=Ubuntu:wght@300&display=swap');
+*{
+	margin: 0;
+	padding: 0;
+}
+html{
+   scroll-behavior: smooth;
+}
+.navbar{
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   position: sticky;
+   top: 0;
+  cursor: pointer;
+  font-size: 20px;
+  background-color: black;
+}
+.img_logo{
+	width: 20%;
+	display: flex;
+	justify-content: center;
+/*	background: red;*/
+	align-items: center;
+}
+.img_logo img{
+	width: 50px;
+	border: 2px solid black;
+	border-radius: 50%;
+   height: 50px;
+   object-fit: cover;
+}
+.nav_list{
+  width: 70%;
+ /* background: grey;*/
+  display: flex;
+  align-items: center;
+
+}
+.nav_list li{
+  list-style: none;
+  padding: 20px 40px;
+}
+.nav_list li a{
+   text-decoration: none;
+   color: white;
+}
+.nav_list li a:hover {
+   text-decoration: none;
+   color: gray;
+}
+.right_nav{
+  width: 30%;
+ /* background: green;*/
+  text-align: right;
+}
+#searchin{
+	padding: 8px;
+	font-size: 18px;
+	border-radius: 8px;
+}
+.right_nav_sum{
+   margin-right: 20px;
+   padding: 4px 10px;
+   border-radius: 8px;
+   font-size: 15px;
+   background: none;
+   color: white;
+   border: 2px solid white;
+}
+.right_nav_sum:hover{
+	background: grey;
+   cursor: pointer;
+}
+.background-nav{
+	background:rgba(0,0,0,.8)  url(image1.jpg);
+	background-size: cover;
+	background-blend-mode: darken;
+}
+.firstsection{
+	height: 80vh;
+}
+.main{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	color: white;
+	font-family:'Ubuntu', sans-serif;
+	max-width: 50%;
+	margin: auto;
+    height: 80%;
+    text-align: center;
+}
+.sub_section1{
+	  width: 80%;
+	  display: flex;
+	  flex-direction: column;
+	  justify-content: center;
+}
+.sub_section2{
+   width: 30%;
+}
+.sub_section2 img{
+   width: 70%;
+   border: 3px solid white;
+   display: block;
+   margin: auto;
+   height: 200px;
+}
+.para1{
+	font-size: 40px;
+}
+.para2{
+    font-size: 20px;
+}
+.btn1{
+	padding: 8px 20px;
+   font-size: 20px;
+   border-radius: 5px;
+   border: 2px solid white;
+   margin: 7px 3px;
+   background: none;
+   color: white;
+   cursor: pointer;
+   font-family: 'Ubuntu', sans-serif;; 
+
+}
+.btn2{
+	padding: 8px 20px;
+   font-size: 20px;
+   border-radius: 5px;
+   border: 2px solid white;
+   margin: 7px 3px;
+   background: none;
+   color: white;
+    cursor: pointer;  
+    font-family: 'Ubuntu', sans-serif;; 
+}
+.secRight{
+   display: flex;
+   align-items: center;
+   justify-content: space-evenly;
+   max-width: 70%;
+   margin: auto;
+   padding: 0px;
+}
+.subimg2{
+  width: 300px;
+  height: 200px;
+  border-radius: 10px;
+  border: 3px solid black;
+  margin-top: 50px;
+  margin-left: 30px;
+}
+.sectionTag{
+   font-size: 40px;
+   font-family: 'Ubuntu', sans-serif;
+   margin-top: 50px;
+}
+.subsectionTag{
+   font-size: 20px;
+   font-family: 'Ubuntu', sans-serif;
+    padding-right: 20px;
+}
+
+.secleft {
+   flex-direction: row-reverse;
+
+}
+.secpara {
+    padding-left: 40px;
+}
+.sectionTag2{
+   font-size: 40px;
+   font-family: 'Ubuntu', sans-serif;
+   margin-top: 50px;
+}
+.subsectionTag2{
+   font-size: 20px;
+   font-family: 'Ubuntu', sans-serif;
+
+}
+
+.contactus{
+   height: 55vh;
+   background: lightcyan;
+   font-family: 'Ubuntu', sans-serif;
+}
+.text-center{
+   text-align: center;
+   font-size: 40px;
+   margin-top: 50px;
+}
+.inputfile{
+   max-width:500px;
+   margin: auto;
+}
+.forminput{
+   margin: 10px;
+   width: 90%;
+   font-size: 15px;
+   border: 2px solid grey;
+   border-radius: 5px;
+   font-family: 'Ubuntu', sans-serif;
+}
+.inputfile button{
+   font-size: 20px;
+   padding: 3px 10px;
+   margin-left: 10px;
+   border-radius: 5px;
+   border: 2px solid black;
+   font-family: 'Ubuntu', sans-serif;
+}
+.footer{
+   padding: 20px 0;
+   text-align: center;
+   font-family: 'Ubuntu', sans-serif; 
+   display: flex;
+   justify-content: center;
+   align-items: center; 
+   color: white;
+   background-color: black;
+}
+.burger{
+   position: absolute;
+   cursor: pointer;
+   right: 5%;
+   top: 15px;
+   display: none;
+}
+.line{
+   width: 33px;
+   background-color: white;
+   height: 4px;
+   margin: 5px 4px;
+}
+
+@media only screen and (max-width: 1136px){
+     .nav_list{
+      flex-direction: column;
+     }
+     .navbar{
+       height: 450px;
+      flex-direction: column;
+      transition: all 0.5s ease-out;
+
+     }
+     .right_nav{
+      text-align: center;
+     }
+     #searchin{
+      width: 100%;
+     }
+     .right_nav_sum{
+      margin-top: 10px;
+      margin-right: 0px;
+     }
+     .burger{
+      display: block;
+     }
+    .height-nav{
+         height: 72px;
+    }
+    .visi-class{
+      opacity: 0;
+    }
+    .main{
+      flex-direction: column-reverse;
+      max-width: 100%;
+      
+     }
+    .secRight{
+      flex-direction: column-reverse;
+    }
+    .para1{
+      text-align: center;
+    }
+    .para2{
+      text-align: center;
+    }
+    .btn1{
+      text-align: center;
+    }
+    .btn2{
+      text-align: center;
+    }
+    .subimg2{
+      margin: 20px 0;
+    }
+    .subsectionTag{
+      padding: 0px;
+    }
+    .sectionTag{
+      margin-bottom: 10px;
+      margin-top: 0px;
+    }
+    .sectionTag2{
+      margin-bottom: 10px;
+      margin-top: 0px;
+    }
+    .contactus{
+      height: 65vh;
+    }
+    .firstsection{
+      height: 92vh;
+    }
+}
